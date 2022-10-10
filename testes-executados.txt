@@ -1,3 +1,9 @@
+Leilao (Model\Leilao)
+ [x] Leilao nao deve receber lances repetidos
+ [x] Leilao nao deve aceitar mais de 5 lances por usuario
+ [x] Leilao deve receber lances with data set #0
+ [x] Leilao deve receber lances with data set #1
+
 Avaliador (Tests\Service\Avaliador)
  [x] Avaliador deve encontrar o menor valor de lances with data set #0
  [x] Avaliador deve encontrar o menor valor de lances with data set #1
