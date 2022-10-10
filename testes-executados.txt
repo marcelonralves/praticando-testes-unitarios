@@ -5,6 +5,7 @@ Leilao (Model\Leilao)
  [x] Leilao deve receber lances with data set #1
 
 Avaliador (Tests\Service\Avaliador)
+ [x] Leilao nao pode ser avaliado vazio
  [x] Avaliador deve encontrar o menor valor de lances with data set #0
  [x] Avaliador deve encontrar o menor valor de lances with data set #1
  [x] Avaliador deve encontrar o menor valor de lances with data set #2

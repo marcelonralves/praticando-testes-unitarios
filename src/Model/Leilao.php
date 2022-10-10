@@ -18,13 +18,13 @@ class Leilao
     public function recebeLance(Lance $lance): void
     {
         if(!empty($this->lances) && $this->checarUltimoUsuario($lance)) {
-            return;
+            throw new \DomainException('Não é possível receber mais de um lance por usuário');
         }
 
         $totalLanceUsuario = $this->quantidadeLancePorUsuario($lance->getUsuario());
 
         if($totalLanceUsuario >= 5) {
-            return;
+            throw new \DomainException('Não é possível receber mais de cinco lances por usuário');
         }
 
         $this->lances[] = $lance;
